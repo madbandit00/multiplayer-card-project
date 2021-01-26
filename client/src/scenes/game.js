@@ -29,7 +29,7 @@ export default class Game extends Phaser.Scene {
 
         let self = this;
 
-        this.socket = io('http://localhost:3000');
+        this.socket = io('https://fathomless-wildwood-04192.herokuapp.com/');
 
         this.socket.on('connect', function () {
             console.log('Connected!');
